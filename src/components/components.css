@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+a {
+  color: rgb(255, 193, 7) !important;
+  text-decoration: none !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lobster", cursive;
+}
+
+/* SIDEBAR STYLES*/
+.sidebar {
+  width: 20%;
+  padding: 0;
+  height: 100vh;
+}
+
+/* Navbar*/
+.nav-menu {
+  position: sticky !important;
+  top: 0;
+  z-index: 99999;
+}
+.logoFont {
+  font-family: "Lobster", cursive;
+  font-size: 2em !important;
+}
+.nav-icon:hover {
+  color: white !important;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+/*Settings*/
+
+.hideInfo {
+  filter: blur(2.5px);
+}
+.showInfo {
+  filter: blur(0);
+}
+.accordion-collapse {
+  width: 100%;
+}
+.user-key p {
+  font-weight: bold;
+}
+
+/* Home */
+.side {
+  width: 24%;
+  padding: 10px;
+  border: 5px solid #fff;
+}
+.side a:hover {
+  color: white !important;
+}
+.side-logo {
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  font-size: 5rem;
+  padding: 13px 17px 0px 10px;
+  border-radius: 200px;
+}
+.side-logo-p {
+  font-family: "Pacifico", cursive;
+}
+.side p {
+  font-family: "Roboto Slab", serif;
+}
+.home-card {
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  font-size: 5rem;
+  padding: 15px 0px;
+  border-radius: 200px;
+}
+.home-card a {
+  color: rgb(33, 37, 41) !important;
+}
+.home-card a:hover {
+  color: white !important;
+}
+
+/* Accordion Style*/
+.accordion-item {
+  border: none !important;
+}
+.accordion-button {
+  background-color: rgb(33, 37, 41) !important;
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgb(217 164 6 / 50%) !important;
+  border-color: #ffc107 !important;
+}
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23ffc107%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e") !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23fff%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e") !important;
+}
+
+/*Products*/
+
+@media only screen and (max-width: 1024px) {
+  .products-thead {
+    display: none;
+  }
+}
+
+/*Groups*/
+
+.remove-group-item {
+  cursor: pointer;
+}
+.image-info img {
+  width: 100px;
+}
+.not-found-title {
+  font-size: calc(4rem + 1.5vw) !important;
+}
+.uyari {
+  font-size: 4rem;
+  padding-left: 40%;
+  margin: 5px;
+}
+
+/* Pagination */
+
+.double-left {
+  margin-left: -21px;
+  filter: drop-shadow(-2px 0px 0px #f1c40f);
+}
+.double-right {
+  margin-right: -21px;
+  filter: drop-shadow(2px 0px 0px #f1c40f);
+}
+@media only screen and (max-width: 1024px) {
+  .double-arrow {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-now {
+    background-color: none !important;
+    border: none !important;
+  }
+}
+.pagination .active,
+.page-item.active .page-link {
+  background-color: #f1c40f !important;
+  border-color: #f1c40f !important;
+}
+/* .pagination-list span{
+  color: #f1c40f!important;
+} */
+/* Not Found */
+.notfound-message {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    font-size: 5rem;
+}
